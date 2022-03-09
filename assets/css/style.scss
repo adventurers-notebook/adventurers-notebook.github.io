@@ -1,0 +1,11 @@
+---
+---
+@import "{{ site.theme }}";
+table, thead, tbody, tr, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#forkme_banner {
+    display: none;
+}
