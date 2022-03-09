@@ -9,3 +9,11 @@ Featues
 =======
 
 A list of the features is coming soon.
+
+Copyright Notice
+================
+
+The content of this website is in the public domain as per the
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) licence.
+
+The icon for this website comes from [D20 icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/d20)
