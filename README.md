@@ -1,4 +1,4 @@
-Traveler's Notebook
+Adventurer's Notebook
 ===================
 
 This is a tool to create, manage, share and use maps for TTRPGs in the cloud.
