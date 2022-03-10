@@ -1,27 +1,48 @@
-Adventurer's Notebook
-=====================
-
-This is a tool to create, manage, share and use maps for TTRPGs in the cloud.
-It aims at being as easy to use as no other map software is easy to use.
-It also aims at being cross platform: Web, Windows, Linux, Macintosh, Android, iOS...
-
-Funcional Requirements for the Traveler's Handbook
-==================================================
-
-This document works as a specification analysis for a tool to handle distributed playing over a shared map. Including editing and cloud storage of maps.
+This is an app to create, manage, share and use maps for TTRPGs in the cloud.
+It is as easy to use as no other map software is easy to use.
+It also is cross platform: Web, Windows, Linux, Android, and in the future also Macintosh, iOS...
 
 Features
---------
+========
 
-1. Multiple layers with conditional visibility and editability;
-1. Multiple languages, with instant (no reload) language switch;
-1. Square grid;
-1. Hex grid;
-1. Tiles toolbars;
-1. User/community provided tiles libraries.
+Multiple layers
+---------------
 
-Use cases (editor)
+Every map can be organized in layers for players, GMs, and more.
+The GM can hide information from players, such as traps, invisible mosters, and so on, while still
+being able to remember where the trap is.
+
+Multiple languages
 ------------------
+
+Every player can use the app in her native language (if the translation is available) to make users
+all over the world confortable with the app. Switching language does not require app reload.
+
+Grids of two kinds
+------------------
+
+Hexagonal grids are more usefull when used for mapping the land, while square grids are better suited
+for houses, castles, dungeons, and so on. The app provides both kinds of maps, and relevant tiles.
+
+Tile libraries
+--------------
+
+The search for a specific tile can be troublesome if tiles are not organized by category in different
+libraries: Load only the libraries you need to use so getting the perfect tile will be very easy.
+
+A given set of libraries will be provided by the app, and more can be added from the internet so the
+user community can provide for excellent tiles.
+
+Common features
+---------------
+
+1. Pan and zoom so you can focus on the part of the map that is more relevant for the game at the moment;
+1. Maps will not be stored on your device but safely on a cloud server;
+1. Maps will stored in folders, and subfolders, with tagging enabled to ease organization, and search;
+1. User login will be avalable with Google (and Twitch?) Single Sign On.
+
+Editing
+-------
 
 1. Editor creates a new map with hex or square tiles;
 1. Editor choses tile, which is shown under the mouse pointer, 50% transparent, and snaps to grid;
@@ -31,28 +52,13 @@ Use cases (editor)
 1. Undo/redo;
 1. Open/save.
 
-Use cases (game play)
----------------------
+Playing a game
+--------------
 
 1. Players can see only what is visible to their characters;
 1. Players can move PC tokens (freely if not in combat);
 1. DM can move NPC tokens (freely if not in combat);
-1. Tokens show character status to players, and DM.
-
-Use cases (common)
-------------------
-
-1. Pan and zoom;
-1. Cloud save (most likely Google Cloud);
-1. Folders, and subfolders on save;
-1. Google/Twitch Single Sign On.
-
-Technical Requirements
-----------------------
-
-1. This tool must be developed in Angular, with a backend API written in NestJS (TypeScript);
-2. This tool must use WebSockets/GraphQL subscriptions to receive updated data from the backend;
-3. This tool must work as a web app, on mobile as a Cordova app, on desktop as an Electron app.
+1. Tokens show character status to players, and GM.
 
 Copyright Notice
 ================
